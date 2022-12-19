@@ -1,7 +1,5 @@
 // Classes
 
-const { execArgv } = require("process");
-
 class Cookie {
   constructor(color) {
     this.color = color;
