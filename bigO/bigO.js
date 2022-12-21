@@ -89,7 +89,7 @@ addItems(10); // input 10 --> output 20
 
 // O (log(n))
 
-//log_b(n) = y WHERE y^number of operations = n
+//log_b(n) = y WHERE y^(number of operations) = n
 //log_2(8) = y WHERE 2^y = 8 --> 2^3 = 8
 //log_2(2) = y WHERE 2^y = 2 --> 2^1 = 2
 
@@ -119,7 +119,7 @@ function logDistinctItemsSquared(a, b) {
   // in the same vein
   for (let i = 0; i < a; i++) {
     for (let j = 0; j < b; j++) {
-      // for loop nested inside a for loop = a * b =/= n^2
+      // for loop nested inside a for loop = O(a*b) =/= n^2
       console.log(i, j);
     }
   }
@@ -134,8 +134,8 @@ myArray.pop(); // and conversely just one removed ( the last one)
 
 // these array methods have a time complexity of O(1) or constant time
 
-myArray.shift(); // removes zeroeth item of array and reassigns all indices prev - 1
-myArray.unshift(11); // adds item to zeroeth index of array and ressasigns all items prev + 1
+myArray.shift(); // removes zeroeth item of array and reassigns all prev indices - 1
+myArray.unshift(11); // adds item to zeroeth index of array and ressasigns all prev indices + 1
 
 // these array methods havea a time complexity of O(n) or linear time
 

@@ -81,10 +81,10 @@ console.log(num2); // this outputs 5 because all we did was allocate num1 value
 let obj1 = {
   value: 11,
 };
-let obj2 = obj1; // what we're saying here is that obj2 points to the same memmory which contains obj1
+let obj2 = obj1; // what we're saying here is that obj2 points to the place in memory where value: 11 inside obj1 is stored
 
 obj1.value = 10; // so NOW when we change obj
-console.log(obj2); // it outputs value: 10
+console.log(obj2); // it outputs value: 10cl
 
 let obj3 = {
   value: 57,
